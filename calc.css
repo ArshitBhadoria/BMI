@@ -1,0 +1,16 @@
+#a{
+    width:1000px;
+    height:1000px;
+    background-color:	#111722
+
+}<html>
+    <head>
+        <title>Calculator</title>
+        <link rel = "stylesheet" href = "calc.css">
+    </head>
+    <body>
+        <div id = "a">
+
+        </div>
+    </body>
+</html>

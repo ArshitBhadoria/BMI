@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+        <div id="a">
+            <div id="b">
+                <h1>What is your BMI?</h1>
+                <hr>
+
+                Weight:
+                <input type="number" placeholder="Enter your weight" id="w">
+                <br>
+
+                Height(m):
+                <input type="number" placeholder="Enter your height" id="h">
+                <br><br>
+
+                <button type="submit" id="btn" value="Calculate BMI">
+                    Calculate BMI
+                </button>
+
+                <hr>
+                <br>
+
+                <div id="z">
+                    <h1 id="h1">RESULTS</h1>
+                    <br><br>
+                    <p id = "p1">Your Bmi score is = 0</p>
+                </div>
+
+            </div>
+        </div>
+    
+
+    <script>
+       
+
+  
+        let submit = document.getElementById("btn");
+        submit.addEventListener("click", function() {
+       let height = document.getElementById("h").value;
+        let weight = document.getElementById("w").value;
+        
+        let result;
+        result = (weight)/(height*height);
+        let resultPanel = document.getElementById("p1");
+        resultPanel.innerText = result;
+              if (height === "") {
+            alert("All fields are necessary");
+        }
+        if (weight === "") {
+    alert("All fields are necessary");
+}
+if (weight <=0) {
+    alert("enter a positive value");
+}
+
+        if (height <= 0) {
+            alert("Credentials cannot be less than or equal to 0");
+        }
+
+});
+      
+
+         
+    </script>
+</body>
+</html>
